@@ -1,0 +1,10 @@
+{
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "markdown.editor.quickSuggestions": true,
+    "emmet.useInlineCompletions": true,
+    "terminal.integrated.suggest.quickSuggestions": {
+        "unknown": "on",
+        "arguments": "on",
+        "commands": "on"
+    }
+}
