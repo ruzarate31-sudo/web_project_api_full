@@ -1,5 +1,6 @@
 const express = require('express');
 const winston = require('winston');
+const cors = require('cors');
 const expressWinston = require('express-winston');
 const mongoose = require('mongoose');
 const { isCelebrateError } = require('celebrate');
@@ -28,6 +29,8 @@ app.use(expressWinston.logger({
   expressFormat: false,
   colorize: false,
 }));
+
+app.use(cors());
 
 app.use(express.json());
 

@@ -84,6 +84,7 @@ function App() {
     api
       .getUserInfo()
       .then((userData) => {
+        console.log(userData);
         setCurrentUser(userData);
       })
       .catch((err) => console.error(err));
